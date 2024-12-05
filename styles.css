@@ -1,0 +1,435 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: "Amatic SC", sans-serif;
+}
+
+header{
+  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('images/hero.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.navbar{
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+}
+
+.navbar:hover{
+  background-color: #000;
+}
+
+.navbar ul{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.navbar ul a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 60px;
+}
+
+.navbar ul a:hover{
+  background-color: #ccc;
+}
+
+.navbar ul a li{
+  font-size: 1.5rem;
+  list-style-type: none;
+  color: #fff;
+}
+
+.hero-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.hero-text h1{
+  font-size: 5rem;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-text button{
+  font-size: 36px;
+  font-family:"Amatic SC", sans-serif;
+  padding: 1rem 0.5rem;
+  color: #fff;
+  background-color: #000;
+  border: none;
+}
+
+.hero-text button:hover{
+  cursor: pointer;
+  background-color: #ccc;
+  color: #000;
+}
+
+.opening-time span{
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem;
+  margin-left: 2rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+/* main */
+
+main h1{
+  text-align: center;
+  font-size: 4rem;
+}
+
+.menu{
+  background-color: #000;
+  color: #fff;
+  font-size: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-nav{
+  width: 70%;
+  border: 1px solid #fff;
+  margin: 1rem;
+}
+.menu-nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-link{
+  flex: 1;
+  text-align: center;
+}
+
+.menu-link a{
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  width: 100%;
+}
+
+.menu-link a li{
+  list-style-type: none;
+  color: #fff;
+}
+
+.menu-link:hover{
+  cursor: pointer;
+  background-color: #f00;
+  color: #fff;
+}
+
+.menu-items{
+  width: 70%;
+  background-color: #fff;
+  color: #000;
+}
+
+.menu-items{
+  display: none;
+}
+
+.menu-items:target{
+  display: block;
+}
+
+/* food */
+.food-item{
+  padding: 1rem;
+}
+.name-price{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.name{
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.name-tag{
+  display: flex;
+  align-items: center;
+}
+
+.price{
+  background-color: #707070;
+  color: #fff;
+  padding: 0.3rem;
+  border-radius: 5px;
+}
+
+.description{
+  color: #797979;
+}
+
+.name-hot{
+  background-color: #e91818;
+  color: #fff;
+  padding: 0.3rem;
+  border-radius: 5px;
+  margin-left: 0px;
+}
+
+.name-new{
+  background-color: #adadad;
+  padding: 0.3rem;
+  border-radius: 5px;
+  margin-left: 0px;
+}
+
+hr{
+  height: 1px;
+  border: none;
+  background-color: #e5e5e5;
+}
+
+/* about */
+.about{
+  background-color: #8b5f5b;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+
+}
+
+.about h1{
+  font-size: 64px;
+  margin-bottom: 2rem;
+}
+
+.about p{
+  font-size: 1.5rem;
+  text-align: justify;
+  line-height: 2;
+  width: 85%;
+}
+
+.about-text p{
+  line-height: 2;
+  width: 100%;
+}
+
+.about-txt-img{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 2rem auto;
+}
+.about-txt-img img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.restaurant-img img{
+  max-height: 700px;
+  width: 100%;
+
+}
+
+.opening-hours{
+  width: 100%;
+  font-size: 36px;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.working-days{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+
+/* contact */
+.contact{
+    background-color: #6c7a80;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact img{
+  max-height: 700px;
+  width: 100%;
+}
+.contact h2{
+  font-size: 4rem;
+  margin: 2rem 0;
+}
+
+.contact p{
+  font-size: 1.5rem;
+  text-align: justify;
+  line-height: 2;
+  width: 85%;
+  margin-top: 1rem;
+}
+
+.fyi{
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.contact .form-text{
+  font-size: 2rem;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.form input{
+  font-family: "Amatic SC", sans-serif;
+  margin: 0.5rem 0;
+  width: 400px;
+  padding: 0.8rem 0.4rem;
+  font-size: 1.5rem;
+}
+
+.form input[type="submit"]{
+  border-radius: 20px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+}
+
+.form input[type="submit"]:hover{
+  cursor: pointer;
+  background-color: #ccc;
+  color: #fff;
+}
+/* footer */
+footer{
+  background-color: #000;
+  color: #fff;
+}
+
+footer p{
+  font-size: 36px;
+  text-align: center;
+  padding: 2rem;
+}
+
+footer p a{
+  text-decoration: none;
+  color: #fff;
+}
+
+/* media queries */
+@media(max-width: 576px){
+  .navbar{
+    width: 100%;
+  }
+  .navbar ul a{
+    justify-content: space-around;
+    padding: 1rem;
+  }
+  .navbar ul a li{
+    font-size: 1rem;
+  }
+  .hero-text{
+    height: 80vh;
+  }
+  .hero-text h1{
+    font-size: 3rem;
+  }
+  .hero-text button{
+    font-size: 24px;
+  }
+  .opening-time span{
+    margin-left: 0.5rem;
+  }
+  .menu{
+    font-size: 24px;
+  }
+  .menu-link a{
+    padding: 5px 10px;
+  }
+  .name-tag{
+    flex-direction: column;
+    align-items: start;
+  }
+  .about{
+    padding: 1rem 2rem;
+  }
+  .about-txt-img{
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-img img{
+    margin: 2rem 0 0 1rem;
+  }
+  .working-days{
+    flex-direction: column;
+  }
+  .contact p{
+    width: 80%;
+    margin: 0.5rem 2rem;
+  }
+  .form input{
+    font-size: 18px;
+    width: 250px;
+    padding: 0.5rem 0.8rem;
+  }
+  .form input[type="submit"]{
+    font-size: 24px;
+    padding: 0.5rem 0.8rem;
+  }
+  footer p{
+    font-size: 24px;
+  }
+}
+
+@media(max-width: 768px){
+  header{
+    height: 100vh;
+  }
+  .hero-text{
+    height: 90vh;
+  }
+}
